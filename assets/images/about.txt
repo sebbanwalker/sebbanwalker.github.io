@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Kantumruy Pro
+- Font Author: Copyright 2022 The Kantumruy Project Authors (https://www.github.com/sovichet/kantumruy-pro)
+- Font Source: http://fonts.gstatic.com/s/kantumruypro/v8/1q2TY5aECkp34vEBSPFOmJxwvk_pilU8OGNfyg2Jq0s0M34dR6dW.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

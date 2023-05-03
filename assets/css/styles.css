@@ -1,6 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
+@keyframes animate-opacity {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+
+  @keyframes slide-up {
+    from {transform: translateY(0%)}
+    to {transform: translateY(-100%)}
+  }
+
+  @keyframes slide-up-skills {
+    from {transform: translatey(0%)}
+    to {transform: translateY(-35vw)}
+  }
+
+  @keyframes skill-overflow {
+    from {overflow: hidden}
+    to {transform: visible}
+  }
+
 
 * {
     box-sizing: border-box;
@@ -10,6 +30,12 @@ body {
     margin: 0;
     height: 100vh;
     background-color: rgb(32, 39, 46);
+    overflow-x: hidden;
+}
+
+.content {
+    overflow: hidden;
+    display: inline-block;
 }
 
 .home-container {
@@ -17,14 +43,22 @@ body {
     flex-direction: row;
     max-width: 100%;
     width: 100vw;
+    height: 35vw;
     margin: 0px;
     background-color: rgb(54, 66, 78);
+    animation-name: slide-up;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
 }
 
 .photo-container {
     padding-left: 10vw;
     padding-right: 10vw;
     padding-bottom: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .photo {
@@ -32,8 +66,9 @@ body {
     height: 30vw;
     max-height: 2000px;
     max-width: 2000px;
-    padding-bottom: 0px;
-    margin-bottom: -4px;
+    opacity: 0;
+    animation-name: animate-opacity;
+    animation-duration:6s;
 }
 
 .intro-text-container {
@@ -49,4 +84,98 @@ body {
     font-weight: 400;
     color:rgb(255, 255, 255);
     text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.69);
+    opacity: 0;
+    animation-name: animate-opacity;
+    animation-duration: 8s;
+}
+
+.skills {
+    animation-name: slide-up-skills;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.skills-title {
+    width: 100vw;
+    height: 20vh;
+}
+
+.skills-title__text {
+    opacity: 0;
+    font-size: 4vw;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(219, 219, 219);
+    font-weight: 400;
+    margin-left: 5vw;
+    animation-name: animate-opacity;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.skills-items {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    flex-wrap: wrap;
+}
+
+.icon-container {
+    width: 20vw;
+    height: 20vw;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    place-items: center;
+}
+
+.image-html {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    max-height: 300px;
+    width: 8vw;
+    height: 8vw;
+}
+
+.image-css {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    max-height: 300px;
+    width: 5.5vw;
+    height: 8vw;
+}
+
+.image-javascript {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 260px;
+    max-height: 260px;
+    width: 8vw;
+    height: 8vw;
+}
+
+.image-react {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    max-height: 300px;
+    width: 8vw;
+    height: 8vw;
+}
+
+.image-redux {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    max-height: 300px;
+    width: 8vw;
+    height: 8vw;
 }
