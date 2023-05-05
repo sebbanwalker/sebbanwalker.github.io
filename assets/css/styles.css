@@ -51,6 +51,7 @@ body {
     margin: 0;
     height: 100vh;
     background-color: rgb(32, 39, 46);
+    background-image: linear-gradient(to bottom right, rgb(32, 39, 46), rgb(19, 23, 27));
     overflow-x: hidden;
 }
 
@@ -66,7 +67,7 @@ body {
     max-width: 100%;
     width: 100vw;
     height: 35vw;
-    background-color: rgb(54, 66, 78);
+    background-image: linear-gradient(to top right, rgb(39, 48, 57), rgb(99, 120, 143));
 }
 
 .slide-up {
