@@ -1,0 +1,71 @@
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+* {
+    box-sizing: border-box;
+    caret-color: transparent;
+}
+
+:root {
+    --clr-1: rgba(255, 123, 0, 0);
+    --clr-2: rgba(255, 123, 0, 0.058);
+    --clr-3: rgb(255, 123, 0, 0.464);
+    --clr-4: rgba(255, 123, 0, 0.638);
+    --clr-5: rgba(255, 123, 0, 0.838);
+    --clr-6: rgba(255, 123, 0, 0.938);
+    --clr-7: rgba(255, 123, 0, 1);
+    --clr-8: rgb(255, 202, 152);
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    place-content: center;
+}
+
+.project-card {
+    width: 40vw;
+    aspect-ratio: 1 / 0.7;
+    background-color: rgb(18, 19, 21);
+    position: relative;
+    border-radius: 0.5rem;
+}
+
+.project-card::before, .project-card::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: -2px;
+    background: conic-gradient(
+        from var(--gradient-angle), 
+        var(--clr-1),
+        var(--clr-2), 
+        var(--clr-3),
+        var(--clr-4),
+        var(--clr-5),
+        var(--clr-6),
+        var(--clr-7),
+        var(--clr-8));
+    border-radius: inherit;
+    animation: rotation 6s linear infinite;
+    opacity: 0;
+}
+
+.project-card:hover::before, .project-card:hover::after {
+    opacity: 1;
+}
+
+
+@keyframes rotation {
+    0% { --gradient-angle: 0deg; }
+    100% { --gradient-angle: 360deg; }
+}
+
+.project-card::after{
+    filter: blur(1rem);
+}
