@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 @keyframes animate-opacity {
     from {
@@ -82,9 +83,25 @@ body {
     animation-name: animate-opacity;
     animation-duration: 8s;
     animation-fill-mode: forwards;
+    margin-bottom: 1vw;
 }
 
-/* SKILLS */ 
+.intro-text__dev {
+    font-size: 3vw;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    color: rgb(255, 138, 29);
+    text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.621);
+    opacity: 0;
+    animation-name: animate-opacity;
+    animation-delay: 3s;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+}
+
+/* SKILLS */
 
 .skills {
     transform: translateY(0%);
@@ -153,6 +170,7 @@ body {
     flex-direction: row;
     align-items: space-around;
     flex-wrap: wrap;
+    margin-bottom: 3vw;
 }
 
 .icon-container {
@@ -280,6 +298,31 @@ body {
 
 /* PORTFOLIO */
 
+.portfolio {
+    min-width: 100vw;
+    background: linear-gradient(rgb(51, 61, 72), rgb(39, 48, 57));
+    position: absolute;
+    z-index: -3;
+}
+
+.portfolio-title {
+
+}
+
+.portfolio-title__text {
+    font-size: 4vw;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(219, 219, 219);
+    font-weight: 400;
+    margin-left: 5vw;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+}
 
 
 /* CARD */
@@ -302,43 +345,105 @@ body {
 }
 
 .project-card {
-    width: 40vw;
+    width: 45vw;
     aspect-ratio: 1 / 0.7;
     background-color: rgb(18, 19, 21);
     position: relative;
     border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    display: grid;
+    flex-direction: column;
+    place-content: center;
 }
 
-.project-card::before, .project-card::after {
+.project-card:hover {
+    cursor: pointer;
+}
+
+.project-card::before,
+.project-card::after {
     content: "";
     position: absolute;
     z-index: -1;
     inset: -2px;
-    background: conic-gradient(
-        from var(--gradient-angle), 
-        var(--clr-1),
-        var(--clr-2), 
-        var(--clr-3),
-        var(--clr-4),
-        var(--clr-5),
-        var(--clr-6),
-        var(--clr-7),
-        var(--clr-8));
+    background: repeating-conic-gradient(from var(--gradient-angle),
+            var(--clr-1),
+            var(--clr-2),
+            var(--clr-3),
+            var(--clr-4),
+            var(--clr-5),
+            var(--clr-6),
+            var(--clr-7),
+            var(--clr-8) 50%);
     border-radius: inherit;
     animation: rotation 6s linear infinite;
     opacity: 0;
 }
 
-.project-card:hover::before, .project-card:hover::after {
+.project-card:hover::before,
+.project-card:hover::after {
     opacity: 1;
 }
 
 
 @keyframes rotation {
-    0% { --gradient-angle: 0deg; }
-    100% { --gradient-angle: 360deg; }
+    0% {
+        --gradient-angle: 0deg;
+    }
+
+    100% {
+        --gradient-angle: 360deg;
+    }
 }
 
-.project-card::after{
+.project-card::after {
     filter: blur(1.5rem);
+}
+
+.project-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-title {
+    font-size: 2vw;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(219, 219, 219);
+    font-weight: 300;
+}
+
+.project-image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-image__dimension {
+    width: 40vw;
+    aspect-ratio: 16 / 9;
+    border-radius: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-tool__container {
+    background: linear-gradient(90deg, rgba(242,78,30,1) 20%, rgba(255,114,98,1) 40%, rgba(162,89,255,1) 60%, rgba(26,188,254,1) 80%, rgba(10,207,131,1) 100%);
+    display: flex;
+    place-items: center;
+    height: 2vw;
+    width: 4vw;
+    place-self: center;
+    border-radius: 7vw;
+}
+
+.project-tool__figma {
+    border-radius: 3rem;
+    font-size: 1vw;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(219, 219, 219);
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.69);
 }

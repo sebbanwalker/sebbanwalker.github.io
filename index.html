@@ -18,13 +18,16 @@
             <img src="assets/images/sebastian.png" class="photo" id="photo">          
         </div>
         <div class="intro-text-container">
-            <h1 class="intro-text" id="intro-text">Hi, I'm Sebastian Walker.</h1>
+            <div class="intro-text-container__text">
+                <h1 class="intro-text" id="intro-text">Hi, I'm Sebastian Walker.</h1>
+                <h2 class="intro-text__dev" id="intro-text__dev">Frontend Developer</h2> 
+            </div>
         </div>
     </section>
     <section class="skills">
         <div class="skills-title">
             <h2 class="skills-title__text">What I know</h2>
-            <h3 class="portfolio-soon">Projects will be uploaded soon</h3>
+            <h3 class="portfolio-soon">I'm working on uploading more projects shortly</h3>
         </div>
         <div class="skills-items">
             <div class="icon-container">
@@ -68,7 +71,26 @@
     </section>
 
     <section class="portfolio" id="portfolio">
-        <div class="project-card"></div>
+        <div class="portfolio-title">
+            <h2 class="portfolio-title__text">Frontend Projects</h2>
+        </div>
+        <div class="card-container">
+            <div class="project-card" onclick="window.open('https://www.figma.com/proto/lwImmyOolci27bxBGE5nEn/Spikens-Verktygsbibliotek?type=design&scaling=scale-down&page-id=0%3A1&starting-point-node-id=27%3A2730&node-id=27-2730', '_blank')">
+                <div class="project-header">
+                    <h3 class="project-title">Stickans Verktygsbibliotek</h3>
+                    <div class="project-tool__container">
+                        <h3 class="project-tool__figma">FIGMA</h3>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img class="project-image__dimension" src="assets/images/spiken.png">
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image"></div>
+            </div>
+        </div>
+
     </section>
 </body>
 </html>

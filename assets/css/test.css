@@ -41,7 +41,7 @@ body {
     position: absolute;
     z-index: -1;
     inset: -2px;
-    background: conic-gradient(
+    background: repeating-conic-gradient(
         from var(--gradient-angle), 
         var(--clr-1),
         var(--clr-2), 
@@ -50,7 +50,7 @@ body {
         var(--clr-5),
         var(--clr-6),
         var(--clr-7),
-        var(--clr-8));
+        var(--clr-8) 50%);
     border-radius: inherit;
     animation: rotation 6s linear infinite;
     opacity: 0;
