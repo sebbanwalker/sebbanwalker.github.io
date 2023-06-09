@@ -428,16 +428,12 @@ body {
 }
 
 .project-tool__container {
-    background: linear-gradient(90deg, rgba(242,78,30,1) 20%, rgba(255,114,98,1) 40%, rgba(162,89,255,1) 60%, rgb(9, 157, 215) 80%, rgb(0, 222, 137) 100%);
     display: flex;
-    place-items: center;
-    height: 2vw;
-    width: 4vw;
-    place-self: center;
-    border-radius: 7vw;
+    flex-direction: row;
+    gap: 0.5vw;
 }
 
-.project-tool__figma {
+.project-tool__text {
     border-radius: 3rem;
     font-size: 1vw;
     font-family: 'Roboto', sans-serif;
@@ -446,4 +442,64 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.69);
+}
+
+.dark-text {
+    color: rgb(0, 0, 0);
+}
+
+.project-tool__html {
+    background-color: #F16529;
+    display: flex;
+    place-items: center;
+    height: 2vw;
+    width: 4vw;
+    place-self: center;
+    border-radius: 7vw;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.41);
+}
+
+.project-tool__css {
+    background-color: #2864F1;
+    display: flex;
+    place-items: center;
+    height: 2vw;
+    width: 4vw;
+    place-self: center;
+    border-radius: 7vw;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.41);
+}
+
+.project-tool__js {
+    background-color: #F7DF1E;
+    display: flex;
+    place-items: center;
+    height: 2vw;
+    width: 4vw;
+    place-self: center;
+    border-radius: 7vw;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.41);
+}
+
+.project-tool__react {
+    background-color: #F16529;
+    display: flex;
+    place-items: center;
+    height: 2vw;
+    width: 4vw;
+    place-self: center;
+    border-radius: 7vw;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.41);
+    
+}
+
+.project-tool__figma {
+    background: linear-gradient(90deg, rgba(242,78,30,1) 20%, rgba(255,114,98,1) 40%, rgba(162,89,255,1) 60%, rgb(9, 157, 215) 80%, rgb(0, 222, 137) 100%);
+    display: flex;
+    place-items: center;
+    height: 2vw;
+    width: 4vw;
+    place-self: center;
+    border-radius: 7vw;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.41);
 }
