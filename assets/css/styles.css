@@ -104,16 +104,11 @@ body {
 /* SKILLS */
 
 .skills {
-    transform: translateY(0%);
-    animation-name: slide-up-skills;
-    animation-duration: 1s;
-    animation-delay: 4s;
-    animation-fill-mode: forwards;
 }
 
 .skills-title {
     width: 100vw;
-    height: 20vh;
+    height: 10vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
