@@ -355,6 +355,34 @@ body {
     cursor: pointer;
 }
 
+.project-hover-cover {
+    transition: opacity 0.5s;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.593);
+    display: flex;
+    place-items: center;
+}
+
+.project-hover-cover:hover {
+    transition: opacity 0.7s;
+    opacity: 1;
+}
+
+.project-hover-cover__text {
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(219, 219, 219);
+    font-weight: 300;
+    transform: translateY(50%);
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
 .project-card::before,
 .project-card::after {
     content: "";
@@ -498,3 +526,7 @@ body {
     border-radius: 7vw;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.41);
 }
+
+@media (max-width: 1000px) {
+    
+  }
