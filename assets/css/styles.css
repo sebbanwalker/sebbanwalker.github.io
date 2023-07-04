@@ -357,6 +357,7 @@ body {
 
 .project-hover-cover {
     transition: opacity 0.5s;
+    border-radius: 5px;
     opacity: 0;
     position: absolute;
     width: 100%;
