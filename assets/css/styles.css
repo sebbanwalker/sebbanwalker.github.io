@@ -103,8 +103,7 @@ body {
 
 /* SKILLS */
 
-.skills {
-}
+.skills {}
 
 .skills-title {
     width: 100vw;
@@ -300,9 +299,7 @@ body {
     z-index: -3;
 }
 
-.portfolio-title {
-
-}
+.portfolio-title {}
 
 .portfolio-title__text {
     font-size: 4vw;
@@ -506,7 +503,7 @@ body {
 }
 
 .project-tool__react {
-    background-color: #F16529;
+    background-color: #0097c1;
     display: flex;
     place-items: center;
     height: 2vw;
@@ -514,11 +511,11 @@ body {
     place-self: center;
     border-radius: 7vw;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.41);
-    
+
 }
 
 .project-tool__figma {
-    background: linear-gradient(90deg, rgba(242,78,30,1) 20%, rgba(255,114,98,1) 40%, rgba(162,89,255,1) 60%, rgb(9, 157, 215) 80%, rgb(0, 222, 137) 100%);
+    background: linear-gradient(90deg, rgba(242, 78, 30, 1) 20%, rgba(255, 114, 98, 1) 40%, rgba(162, 89, 255, 1) 60%, rgb(9, 157, 215) 80%, rgb(0, 222, 137) 100%);
     display: flex;
     place-items: center;
     height: 2vw;
@@ -528,6 +525,4 @@ body {
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.41);
 }
 
-@media (max-width: 1000px) {
-    
-  }
+@media (max-width: 1000px) {}
