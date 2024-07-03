@@ -1,179 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sebastian Walker</title>
+		<link rel="icon" href="assets/images/favicon-32x32.png" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<script src="script.js"></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sebastian Walker</title>
-    <link rel="icon" href="assets/images/favicon-32x32.png">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="script.js"></script>
-</head>
+	<body class="content">
+		<nav class="navigation"></nav>
 
-<body class="content">
-    <nav class="navigation">
-    </nav>
+		<section class="home-container" id="home-container">
+			<div class="photo-container">
+				<img src="assets/images/sebastian.png" class="photo" id="photo" />
+			</div>
+			<div class="intro-text-container">
+				<div class="intro-text-container__text">
+					<h1 class="intro-text" id="intro-text">Hi, I'm Sebastian Walker.</h1>
+					<h2 class="intro-text__dev" id="intro-text__dev">
+						Frontend Developer
+					</h2>
+				</div>
+			</div>
+		</section>
+		<section class="skills">
+			<div class="skills-title">
+				<h2 class="skills-title__text">Stack</h2>
+				<h3 class="portfolio-soon"></h3>
+			</div>
+			<div class="skills-items">
+				<div class="icon-container">
+					<img src="assets/images/html.png" class="image-html" />
+				</div>
+				<div class="icon-container">
+					<img src="assets/images/css.png" class="image-css" />
+				</div>
+				<div class="icon-container">
+					<img src="assets/images/ts.png" class="image-javascript" />
+				</div>
+				<div class="icon-container">
+					<img src="assets/images/js.png" class="image-javascript" />
+				</div>
+				<div class="icon-container">
+					<img src="assets/images/node.png" class="image-node" />
+				</div>
+				<div class="icon-container">
+					<img src="assets/images/aws.png" class="image-node" />
+				</div>
+				<div class="icon-container">
+					<img src="assets/images/react.png" class="image-react" />
+				</div>
+				<div class="icon-container">
+					<img src="assets/images/openai.png" class="image-node" />
+				</div>
+				<div class="icon-container">
+					<img src="assets/images/redux.png" class="image-redux" />
+				</div>
+				<div class="icon-container">
+					<img src="assets/images/figma.png" class="image-figma" />
+				</div>
+				<div class="icon-container">
+					<img src="assets/images/BEM.png" class="image-bem" />
+				</div>
+				<div class="icon-container">
+					<img src="assets/images/sass.png" class="image-sass" />
+				</div>
+				<div class="icon-container">
+					<img src="assets/images/git.png" class="image-git" />
+				</div>
+				<div class="icon-container">
+					<img src="assets/images/java.png" class="image-java" />
+				</div>
+				<div class="icon-container">
+					<img src="assets/images/csharp.png" class="image-csharp" />
+				</div>
+				<div class="icon-container">
+					<img src="assets/images/ps.png" class="image-ps" />
+				</div>
+			</div>
+		</section>
 
-    <section class="home-container" id="home-container">
-        <div class="photo-container">
-            <img src="assets/images/sebastian.png" class="photo" id="photo">
-        </div>
-        <div class="intro-text-container">
-            <div class="intro-text-container__text">
-                <h1 class="intro-text" id="intro-text">Hi, I'm Sebastian Walker.</h1>
-                <h2 class="intro-text__dev" id="intro-text__dev">Frontend Developer</h2>
-            </div>
-        </div>
-    </section>
-    <section class="skills">
-        <div class="skills-title">
-            <h2 class="skills-title__text">What I know</h2>
-            <h3 class="portfolio-soon">I'm working on uploading more projects shortly</h3>
-        </div>
-        <div class="skills-items">
-            <div class="icon-container">
-                <img src="assets/images/html.png" class="image-html">
-            </div>
-            <div class="icon-container">
-                <img src="assets/images/css.png" class="image-css">
-            </div>
-            <div class="icon-container">
-                <img src="assets/images/js.png" class="image-javascript">
-            </div>
-            <div class="icon-container">
-                <img src="assets/images/react.png" class="image-react">
-            </div>
-            <div class="icon-container">
-                <img src="assets/images/redux.png" class="image-redux">
-            </div>
-            <div class="icon-container">
-                <img src="assets/images/figma.png" class="image-figma">
-            </div>
-            <div class="icon-container">
-                <img src="assets/images/BEM.png" class="image-bem">
-            </div>
-            <div class="icon-container">
-                <img src="assets/images/sass.png" class="image-sass">
-            </div>
-            <div class="icon-container">
-                <img src="assets/images/git.png" class="image-git">
-            </div>
-            <div class="icon-container">
-                <img src="assets/images/java.png" class="image-java">
-            </div>
-            <div class="icon-container">
-                <img src="assets/images/csharp.png" class="image-csharp">
-            </div>
-            <div class="icon-container">
-                <img src="assets/images/ps.png" class="image-ps">
-            </div>
-        </div>
-
-    </section>
-
-    <section class="portfolio" id="portfolio">
-        <div class="portfolio-title">
-            <h2 class="portfolio-title__text">Frontend Projects</h2>
-        </div>
-        <div class="card-container">
-            <div class="project-card" onclick="window.open('https://mystical-meadows-react.netlify.app/')">
-                <div class="project-header">
-                    <h3 class="project-title">Mystical Meadows</h3>
-                    <div class="project-tool__react">
-                        <h3 class="project-tool__text">React</h3>
-                    </div>
-                </div>
-                <div class="project-image">
-                    <img class="project-image__dimension" src="assets/images/mystical-meadows.png">
-                </div>
-                <div class="project-hover-cover">
-                    <h3 class="project-hover-cover__text">This is an animation project made using React and Framer
-                        Motion. </h3>
-                </div>
-            </div>
-            <div class="project-card"
-                onclick="window.open('https://www.figma.com/proto/lwImmyOolci27bxBGE5nEn/Spikens-Verktygsbibliotek?type=design&scaling=scale-down&page-id=0%3A1&starting-point-node-id=27%3A2730&node-id=27-2730', '_blank')">
-                <div class="project-header">
-                    <h3 class="project-title">Stickans Verktygsbibliotek</h3>
-                    <div class="project-tool__figma">
-                        <h3 class="project-tool__text">Figma</h3>
-                    </div>
-                </div>
-                <div class="project-image">
-                    <img class="project-image__dimension" src="assets/images/spiken.png">
-                </div>
-                <div class="project-hover-cover">
-                    <h3 class="project-hover-cover__text">This is a Figma prototype representing the basic functionality
-                        and design of a tool renting library. </h3>
-                </div>
-            </div>
-            <div class="project-card" onclick="window.open('https://main--astonishing-lily-90586c.netlify.app/')">
-                <div class="project-header">
-                    <h3 class="project-title">Solaris</h3>
-                    <div class="project-tool__container">
-                        <div class="project-tool__html">
-                            <h3 class="project-tool__text">HTML</h3>
-                        </div>
-                        <div class="project-tool__css">
-                            <h3 class="project-tool__text">CSS</h3>
-                        </div>
-                        <div class="project-tool__js">
-                            <h3 class="project-tool__text dark-text">JS</h3>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="project-image">
-                    <img class="project-image__dimension" src="assets/images/solaris.png">
-                </div>
-                <div class="project-hover-cover">
-                    <h3 class="project-hover-cover__text">An interactive web application of our solar system, a project
-                        mainly focusing on API requests through JS.</h3>
-                </div>
-            </div>
-            <div class="project-card" onclick="window.open('https://lighthearted-concha-7080a9.netlify.app/')">
-                <div class="project-header">
-                    <h3 class="project-title">Bonz.AI</h3>
-                    <div class="project-tool__container">
-                        <div class="project-tool__html">
-                            <h3 class="project-tool__text">HTML</h3>
-                        </div>
-                        <div class="project-tool__css">
-                            <h3 class="project-tool__text">CSS</h3>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="project-image">
-                    <img class="project-image__dimension" src="assets/images/bonzai.png">
-                </div>
-                <div class="project-hover-cover">
-                    <h3 class="project-hover-cover__text">A mockup fitting the specifications of an existing Figma
-                        Prototype with HTML and CSS. Functionality is limited.</h3>
-                </div>
-            </div>
-            <div class="project-card"
-                onclick="window.open('https://www.figma.com/proto/KT74IVbii29E5TJLnxkjfC/RolePal?type=design&t=qF9TDnEuws2AFkV5-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&node-id=1-2&mode=design')">
-                <div class="project-header">
-                    <h3 class="project-title">Rolepal</h3>
-                    <div class="project-tool__container">
-                        <div class="project-tool__figma">
-                            <h3 class="project-tool__text">Figma</h3>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="project-image">
-                    <img class="project-image__dimension" src="assets/images/rolepal.png">
-                </div>
-                <div class="project-hover-cover">
-                    <h3 class="project-hover-cover__text">A Figma prototype for a tabletop RPG booking application.</h3>
-                </div>
-            </div>
-        </div>
-
-    </section>
-</body>
-
+		<section class="portfolio" id="portfolio">
+			<div class="portfolio-title">
+				<h2 class="portfolio-title__text">Frontend Projects</h2>
+			</div>
+			<div class="card-container">
+				<div
+					class="project-card"
+					onclick="window.open('https://github.com/sebbanwalker/Swing-Notes')">
+					<div class="project-header">
+						<h3 class="project-title">Swing Notes</h3>
+						<div class="project-tool__container">
+							<div class="project-tool__react">
+								<h3 class="project-tool__text">React</h3>
+							</div>
+							<div class="project-tool__js">
+								<h3 class="project-tool__text dark-text">JS</h3>
+							</div>
+							<div class="project-tool__jwt">
+								<h3 class="project-tool__text">JWT</h3>
+							</div>
+							<div class="project-tool__node">
+								<h3 class="project-tool__text">Node</h3>
+							</div>
+						</div>
+					</div>
+					<div class="project-image">
+						<img
+							class="project-image__dimension"
+							src="assets/images/swingnotes.png" />
+					</div>
+					<div class="project-hover-cover">
+						<h3 class="project-hover-cover__text">
+							A fullstack application for personalised notes using a personal
+							account.
+						</h3>
+					</div>
+				</div>
+				<div
+					class="project-card"
+					onclick="window.open('https://wave-wizard-l4tgxrprz-sebbanwalkers-projects.vercel.app/')">
+					<div class="project-header">
+						<h3 class="project-title">Wave Wizard</h3>
+						<div class="project-tool__container">
+							<div class="project-tool__react">
+								<h3 class="project-tool__text">React</h3>
+							</div>
+							<div class="project-tool__ts">
+								<h3 class="project-tool__text">TS</h3>
+							</div>
+							<div class="project-tool__js">
+								<h3 class="project-tool__text dark-text">Web Audio API</h3>
+							</div>
+						</div>
+					</div>
+					<div class="project-image">
+						<img
+							class="project-image__dimension"
+							src="assets/images/wavewizard.png" />
+					</div>
+					<div class="project-hover-cover">
+						<h3 class="project-hover-cover__text">
+							A custom audio engine built with web audio API that teaches basic
+							principles of sound design.
+						</h3>
+					</div>
+				</div>
+				<div
+					class="project-card"
+					onclick="window.open('https://mystical-meadows-react.netlify.app/')">
+					<div class="project-header">
+						<h3 class="project-title">Mystical Meadows</h3>
+						<div class="project-tool__react">
+							<h3 class="project-tool__text">React</h3>
+						</div>
+					</div>
+					<div class="project-image">
+						<img
+							class="project-image__dimension"
+							src="assets/images/mystical-meadows.png" />
+					</div>
+					<div class="project-hover-cover">
+						<h3 class="project-hover-cover__text">
+							This is an animation project made using React and Framer Motion.
+						</h3>
+					</div>
+				</div>
+				<div
+					class="project-card"
+					onclick="window.open('https://www.figma.com/proto/lwImmyOolci27bxBGE5nEn/Spikens-Verktygsbibliotek?type=design&scaling=scale-down&page-id=0%3A1&starting-point-node-id=27%3A2730&node-id=27-2730', '_blank')">
+					<div class="project-header">
+						<h3 class="project-title">Stickans Verktygsbibliotek</h3>
+						<div class="project-tool__figma">
+							<h3 class="project-tool__text">Figma</h3>
+						</div>
+					</div>
+					<div class="project-image">
+						<img
+							class="project-image__dimension"
+							src="assets/images/spiken.png" />
+					</div>
+					<div class="project-hover-cover">
+						<h3 class="project-hover-cover__text">
+							This is a Figma prototype representing the basic functionality and
+							design of a tool renting library.
+						</h3>
+					</div>
+				</div>
+				<div
+					class="project-card"
+					onclick="window.open('https://main--astonishing-lily-90586c.netlify.app/')">
+					<div class="project-header">
+						<h3 class="project-title">Solaris</h3>
+						<div class="project-tool__container">
+							<div class="project-tool__html">
+								<h3 class="project-tool__text">HTML</h3>
+							</div>
+							<div class="project-tool__css">
+								<h3 class="project-tool__text">CSS</h3>
+							</div>
+							<div class="project-tool__js">
+								<h3 class="project-tool__text dark-text">JS</h3>
+							</div>
+						</div>
+					</div>
+					<div class="project-image">
+						<img
+							class="project-image__dimension"
+							src="assets/images/solaris.png" />
+					</div>
+					<div class="project-hover-cover">
+						<h3 class="project-hover-cover__text">
+							An interactive web application of our solar system, a project
+							mainly focusing on API requests through JS.
+						</h3>
+					</div>
+				</div>
+				<div
+					class="project-card"
+					onclick="window.open('https://lighthearted-concha-7080a9.netlify.app/')">
+					<div class="project-header">
+						<h3 class="project-title">Bonz.AI</h3>
+						<div class="project-tool__container">
+							<div class="project-tool__html">
+								<h3 class="project-tool__text">HTML</h3>
+							</div>
+							<div class="project-tool__css">
+								<h3 class="project-tool__text">CSS</h3>
+							</div>
+						</div>
+					</div>
+					<div class="project-image">
+						<img
+							class="project-image__dimension"
+							src="assets/images/bonzai.png" />
+					</div>
+					<div class="project-hover-cover">
+						<h3 class="project-hover-cover__text">
+							A mockup fitting the specifications of an existing Figma Prototype
+							with HTML and CSS. Functionality is limited.
+						</h3>
+					</div>
+				</div>
+				<div
+					class="project-card"
+					onclick="window.open('https://www.figma.com/proto/KT74IVbii29E5TJLnxkjfC/RolePal?type=design&t=qF9TDnEuws2AFkV5-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&node-id=1-2&mode=design')">
+					<div class="project-header">
+						<h3 class="project-title">Rolepal</h3>
+						<div class="project-tool__container">
+							<div class="project-tool__figma">
+								<h3 class="project-tool__text">Figma</h3>
+							</div>
+						</div>
+					</div>
+					<div class="project-image">
+						<img
+							class="project-image__dimension"
+							src="assets/images/rolepal.png" />
+					</div>
+					<div class="project-hover-cover">
+						<h3 class="project-hover-cover__text">
+							A Figma prototype for a tabletop RPG booking application.
+						</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
